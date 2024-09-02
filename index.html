@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Grid Layout Design</title>
+</head>
+<body>
+
+    <div class="min-h-screen grid grid-rows-[auto_1fr_auto_auto] grid-cols-12 bg-black">
+        <!--header-->
+        <header class="min-h-24 px-8 py-10 text-[#dadada] bg-[#222] col-span-12">Contents of header here</header>
+        <!-- main & sidebar -->
+        <main class="col-span-9 bg-[#333] px-8 py-4 text-[#dadada]" > content here</main>
+        <aside class="col-span-3 bg-[#444] px-8 py-4 text-[#dadada]">Right sidebar</aside>
+        <!-- prefooter -->
+        <div class="col-span-12 bg-[#111] px-8 py-10 text-[#dadada]">
+            <p class="text-lg font-normal">Prefooter here</p>
+            <p>this is pre-footer area</p>
+        </div>
+        <!-- footer -->
+         <footer class="col-span-12 min-h-16 py-4 text-[#dadada] text-center text-sm font-normal align-middle ">footer area</footer>
+    </div>
+
+</body>
+</html>
